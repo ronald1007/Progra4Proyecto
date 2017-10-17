@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 14, 2017 2:47:07 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.agenda.domain.Usuario" table="usuario" catalog="juber" optimistic-lock="version">
+        <id name="idUsuario" type="string">
+            <column name="idUsuario" length="15" />
+            <generator class="assigned" />
+        </id>
+        <property name="clave" type="string">
+            <column name="clave" length="15" />
+        </property>
+        <property name="tipo" type="java.lang.Integer">
+            <column name="tipo" />
+        </property>
+        <set name="clientes" table="cliente" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="Usuario_idUsuario" length="15" not-null="true" />
+            </key>
+            <one-to-many class="cr.ac.una.prograiv.agenda.domain.Cliente" />
+        </set>
+    </class>
+</hibernate-mapping>
