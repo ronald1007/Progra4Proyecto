@@ -45,7 +45,6 @@ Contributor(s):
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/juber</property>
     <property name="hibernate.connection.username">root</property>
-    <property name="hibernate.connection.password">blaugrana</property>
     <mapping resource="cr/ac/una/prograiv/agenda/domain/Servicio.hbm.xml"/>
     <mapping resource="cr/ac/una/prograiv/agenda/domain/Conductor.hbm.xml"/>
     <mapping resource="cr/ac/una/prograiv/agenda/domain/Usuario.hbm.xml"/>
