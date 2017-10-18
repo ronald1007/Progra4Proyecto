@@ -47,7 +47,7 @@ public class test {
         
         ConductorBL blCL = new ConductorBL();               //***************************************************
       
-       Conductor p1 = new Conductor("12333",p15,new Date(),new Date(),"A1",null);
+       Conductor p1 = new Conductor("12333",p15,new Date(),new Date(),"A1");//,null);
         blCL.merge(p1);
         
          UsuarioBL blCL4 = new UsuarioBL();
