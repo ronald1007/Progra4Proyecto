@@ -17,7 +17,7 @@ public class Conductor  implements java.io.Serializable {
      private Date fechaNacimiento;
      private Date fechaVencimientoLicencia;
      private String tipoLicencia;
-    // private Set<Servicio> servicios = new HashSet<Servicio>(0);
+     private Set<Servicio> servicios = new HashSet<Servicio>(0);
 
     public Conductor() {
     }
@@ -27,13 +27,13 @@ public class Conductor  implements java.io.Serializable {
         this.cedula = cedula;
         this.vehiculo = vehiculo;
     }
-    public Conductor(String cedula, Vehiculo vehiculo, Date fechaNacimiento, Date fechaVencimientoLicencia, String tipoLicencia){//, Set<Servicio> servicios) {
+    public Conductor(String cedula, Vehiculo vehiculo, Date fechaNacimiento, Date fechaVencimientoLicencia, String tipoLicencia, Set<Servicio> servicios) {
        this.cedula = cedula;
        this.vehiculo = vehiculo;
        this.fechaNacimiento = fechaNacimiento;
        this.fechaVencimientoLicencia = fechaVencimientoLicencia;
        this.tipoLicencia = tipoLicencia;
-       //this.servicios = servicios;
+       this.servicios = servicios;
     }
    
     public String getCedula() {
@@ -71,13 +71,13 @@ public class Conductor  implements java.io.Serializable {
     public void setTipoLicencia(String tipoLicencia) {
         this.tipoLicencia = tipoLicencia;
     }
-//    public Set<Servicio> getServicios() {
-//        return this.servicios;
-//    }
-//    
-//    public void setServicios(Set<Servicio> servicios) {
-//        this.servicios = servicios;
-//    }
+    public Set<Servicio> getServicios() {
+        return this.servicios;
+    }
+    
+    public void setServicios(Set<Servicio> servicios) {
+        this.servicios = servicios;
+    }
 
 
 
