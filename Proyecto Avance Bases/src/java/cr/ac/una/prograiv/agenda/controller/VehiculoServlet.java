@@ -88,9 +88,14 @@ public class VehiculoServlet extends HttpServlet {
                 case "consultarVehiculoByID":
                     //se consulta la Carro por placa
                     //p = pBL.findById(Integer.parseInt(request.getParameter("idPersona")));
-                    p = pBL.findById(Integer.parseInt(request.getParameter("placa")));
+                    
+                    System.out.println("Consultando vehiculo por id");
+                    p = pBL.findById(Integer.parseInt(request.getParameter("idVehiculo")));
                     //se pasa la informacion del objeto a formato JSON
+                    System.out.println(p.getPlaca());
+                    System.out.println(p.getModelo());
                     json = new Gson().toJson(p);
+                    System.out.println("Se parseo bien");
                     out.print(json);
                     break;
                     //-------------------------------------------
@@ -118,14 +123,14 @@ public class VehiculoServlet extends HttpServlet {
                         pBL.save(p);
     
                         //Se imprime la respuesta con el response
-                        out.print("C~La persona fue ingresada correctamente");
+                        out.print("C~El vehiculo fue ingresado correctamente");
                         
                     }else{//es modificar persona
                         //Se guarda el objeto
                         pBL.merge(p);
 
                         //Se imprime la respuesta con el response
-                        out.print("C~La persona fue modificada correctamente");
+                        out.print("C~El vehiculo fue modificado correctamente");
                     }
                     
                     break;
