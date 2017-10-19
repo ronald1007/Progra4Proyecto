@@ -41,8 +41,8 @@ public class ConductorServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             //String para guardar el JSON generaro por al libreria GSON
+           // String json;
             String json;
-            
             //Se crea el objeto Persona
             Conductor p = new Conductor();
 
