@@ -30,6 +30,10 @@ import javax.servlet.http.HttpSession;
  */
 public class VehiculoServlet extends HttpServlet {
 
+    
+    
+    
+    
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -55,6 +59,7 @@ public class VehiculoServlet extends HttpServlet {
             //Se hace una pausa para ver el modal
             Thread.sleep(1000);
             
+            System.out.println("Entrando al servlet");
             
             //**********************************************************************
             //se toman los datos de la session
@@ -187,3 +192,4 @@ public class VehiculoServlet extends HttpServlet {
     }// </editor-fold>
 
 }
+
