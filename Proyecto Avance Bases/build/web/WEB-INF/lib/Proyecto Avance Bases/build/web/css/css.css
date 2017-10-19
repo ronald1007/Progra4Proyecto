@@ -1,0 +1,335 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 6, 2017, 1:37:36 PM
+    Author     : Bryan
+*/
+
+body{
+height: 100%;
+color:white;
+
+background-image: linear-gradient(#0f4a6a, #0b364d) ; 
+  /* background: darkred;
+    background-image: linear-gradient(#eee, ghostwhite) ; 
+  */
+}
+
+#CUERPO{
+    height: 750px;
+}
+
+#refer{
+    height: 750px;
+}
+
+
+/*Reviews*/
+
+ #custom_carousel .item {
+            color: white;
+           /* background-color: #eee;*/
+           background-color: #0f4a6a;
+            padding: 20px 0;
+        }
+        
+        #custom_carousel .controls {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 0;
+            margin: 0;
+            white-space: nowrap;
+            text-align: center;
+            position: relative;
+            /*background: #ddd*/
+             background-color: #0D3E59;
+             
+        }
+        
+        #custom_carousel .controls li {
+            display: table-cell;
+            width: 1%;
+            max-width: 90px
+        }
+        
+        #custom_carousel .controls li.active {
+            background-color: #eee;
+            border-top: 3px solid #ffeb3b;
+        }
+        
+        #custom_carousel .controls a small {
+            overflow: hidden;
+            display: block;
+            font-size: 10px;
+            margin-top: 5px;
+            font-weight: bold
+        }
+
+/*-----------------------------------------*/
+
+.navbar-inverse { 
+    background-color: #0D3E59;
+      
+    /*border-color: darkred*/
+}
+/*letras*/
+.navbar-inverse .navbar-nav>li>a { 
+    color: #FFFFFF
+}
+
+.navbar-brand{
+    color:white;
+    font-size: 40px;
+}
+.navbar-header{
+    color: white;
+}
+
+
+#box{ /*Contactos*/
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    border-radius: 4px;
+    top:50px;
+}
+
+#Contact{   /*Contactos*/
+    text-align:center;
+    color:#fff;
+}
+
+#map { 
+    /*margin-left: 25%;*/
+    width: 115%;
+    height: 500px
+}
+
+footer p {
+    color:cyan;
+    background-color: black;
+    text-align:center;
+    padding: 10.5px;
+    margin: 0px;
+    line-height: 100%;
+    /*line-height: 100%;*/
+}
+footer{
+  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    
+    text-align: center;
+    color: #0D3E59;
+}
+
+.glyphicon-user:hover{
+   
+}
+
+#his{
+   padding-left: 100px;
+    text-align: left;
+    font-size: 50px;
+    color:white;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 5px solid #0a3146;
+    background-color: #0a3146;
+    margin: 0;
+     padding-left: 190px;
+}
+
+/*----*/
+
+
+h4 {
+  font-size: 50px;
+  background: #0a3146;
+  color: white;
+  padding: 40px 0 100px 20%;
+  margin-bottom: 50px;
+}
+
+.tab-wrap11 {
+  width: 50%;
+  margin-left: 20%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -106px;
+}
+
+input[type="radio"][name="tabs"] {
+  position: absolute;
+  z-index: -1;
+}
+input[type="radio"][name="tabs"]:checked + .tab-label-content label {
+  color: white;
+}
+input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content {
+  display: block;
+}
+input[type="radio"][name="tabs"]:nth-of-type(1):checked ~ .slide {
+  left: calc((100% / 4) * 0);
+}
+input[type="radio"][name="tabs"]:nth-of-type(2):checked ~ .slide {
+  left: calc((100% / 4) * 1);
+}
+input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide {
+  left: calc((100% / 4) * 2);
+}
+input[type="radio"][name="tabs"]:nth-of-type(4):checked ~ .slide {
+  left: calc((100% / 4) * 3);
+}
+input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
+  left: 0;
+}
+
+label {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0a3146;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 56px;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  width: 100%;
+}
+
+.slide.fula{
+  background: #ffeb3b;
+  width: calc(100% / 4);
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 4px);
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+}
+
+.tab-label-content {
+  width: 100%;
+}
+.tab-label-content .tab-content {
+    font-size: 20px;
+  position: absolute;
+  top: 100px;
+  left: 16px;
+  line-height: 130%;
+  display: none;
+}
+
+.follow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  background: #0a3146;
+  display: block;
+  margin: 300px auto 0;
+  white-space: nowrap;
+  padding: 13px;
+  box-sizing: border-box;
+  color: white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.follow i {
+  margin-right: 20px;
+  -webkit-transition: margin-right 0.2s ease;
+  transition: margin-right 0.2s ease;
+}
+.follow:hover {
+  width: 134px;
+}
+.follow:hover i {
+  margin-right: 10px;
+}
+
+
+.well{
+    background-color:#0f4a6a; 
+    border-color: transparent;
+}
+
+
+
+ /*Ordenar Servicio*/
+#Botonn {
+   padding-top: 50px;
+    margin-left: 150px;
+    width: 100%;
+	color: #fff;
+	font-weight: 30;
+  text-align: center;
+}
+
+.name.N {
+     text-align: left;
+     
+  margin: 100px 0 40px;
+  font-size: 30px;
+  text-shadow: 0 0 10px #333;
+  line-height: 0;
+}
+.container.a {
+ 
+  width: 300px;
+  height: 300px;
+}
+.box3.B {
+    
+  padding: 22px;
+  width: 150px;
+  height: 150px;
+  margin: 25px;
+  float: center;
+  background: #4cd3e1;
+  border-radius: 10px;
+  border: solid 3px #4cd3e1;
+  
+  text-shadow: 0 0 20px #333;
+  box-shadow: 0 0 25px #333;
+  transition: margin-top 1000ms, box-shadow 300ms;
+  cursor: pointer;
+}
+
+.box3.B {
+  background: #54efff;
+  border: solid 3px #4cd3e1;
+}
+
+.box3.B:hover {
+  box-shadow: 0 0 10px #999;
+  margin-top: 10px;
+}
+
+.line.A {/*Ordenar Servicio*/
+  width: 300px;
+  height: 1px;
+  background: #fff;
+  
+  box-shadow: 0 0 10px #333;
+}
+
