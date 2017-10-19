@@ -101,6 +101,10 @@
                                 <label for="vehiculo">ID Vehiculo:</label>
                                 <input type="text" class="form-control" id="vehiculo" placeholder="Id de Vehiculo" >
                             </div>
+                            <div class="form-group" id="groupTipo">
+                                <label for="tipoLicencia">Tipo de Licencia:</label>
+                                <input type="text" class="form-control" id="tipoLicencia" placeholder="Tipo de Licencia" >
+                            </div>
 
                          <div class="form-group" id="groupFechaNacimiento">
                                 <label for="dpFechaNacimiento">Fecha Nacimiento:</label>
@@ -203,7 +207,7 @@
                     </div>
                     <!-- ********************************************************** -->
 
-                    <table class="table table-hover table-condensed" id="tablaPersonas"></table>
+                    <table class="table table-hover table-condensed" id="tablaConductores"></table>
                     <ul class="pagination pagination" style="padding-left: 40%;">
     <li><a id="primera" href="#">1</a></li>
     <li><a id="segunda" href="#">2</a></li>
