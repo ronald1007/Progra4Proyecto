@@ -197,12 +197,3 @@ public class VehiculoServlet extends HttpServlet {
 
 
 
-
-
-////Me cago en satan
-//Hola goku
-
-//Me pkalvfds
-
-
-//suaveeee
