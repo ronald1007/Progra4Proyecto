@@ -20,7 +20,7 @@
         <property name="tipoLicencia" type="string">
             <column name="tipoLicencia" length="15" />
         </property>
-        <set name="servicios" table="servicio" inverse="true" lazy="false" fetch="select">
+        <<set name="servicios" table="servicio" inverse="true" lazy="false" fetch="select">
             <key>
                 <column name="Conductor_cedula" length="15" not-null="true" />
             </key>
